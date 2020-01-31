@@ -2,11 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import Styled from "styled-components";
 import { NavLink, Route } from "react-router-dom";
-import Logo from "./logo.js";
 import { userLogout } from "../actions/actionCreators";
 const NavBarContainer = Styled.div`
 display:flex;
-background-color:#0099cc;
+background-color:black;
 padding:1%;
 justify-content:flex-end;
 `;
@@ -18,7 +17,7 @@ const NavBarItem = Styled.div`
   margin: .5rem 1.3rem;
   height:.8vh;
   width:6%;
-  color: #cc3300;
+  color: white;
   border: 2px solid white;
   border-radius:.5rem;
   p{
@@ -34,15 +33,9 @@ const NavBarItem = Styled.div`
 function NavBar(props) {
   return (
     <NavBarContainer>
-      <Logo />
       <NavBarItem>
         <NavLink exact to="/">
           <p>Home</p>
-        </NavLink>
-      </NavBarItem>
-      <NavBarItem>
-        <NavLink to="/" onClick={() => props.userLogout()}>
-          <p>Log Out</p>
         </NavLink>
       </NavBarItem>
       <NavBarItem>
@@ -58,6 +51,11 @@ function NavBar(props) {
       <NavBarItem>
         <NavLink to="/Login">
           <p>Login</p>
+        </NavLink>
+      </NavBarItem>
+      <NavBarItem>
+        <NavLink to="/" onClick={() => props.userLogout()}>
+          <p>Log Out</p>
         </NavLink>
       </NavBarItem>
       <Route exact path="/" />

@@ -10,7 +10,7 @@ align-self:center;
 justify-content:center;
 flex-direction:column;
 margin:5% auto;
-background-color:#0099cc;
+background-color:black;
 padding:1%;
 width:60%;
 color:white;
@@ -48,7 +48,7 @@ Form{
   margin:5%;
   height:20%;
   width:30%;
-  background-color:#0099cc;
+  background-color:black;
   color:white;
   border:2px solid white;
   border-radius:5px;

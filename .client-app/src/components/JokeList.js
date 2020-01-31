@@ -7,7 +7,7 @@ display:flex;
 flex-direction:column;
 padding:1%;
 width:80%;
-background-color:#0099cc;
+background-color:black;
 padding:1%;
 justify-content:center;
 border-radius:20px;
