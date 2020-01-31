@@ -1,7 +1,10 @@
 {
-    "name": "node-auth1-project",
+    "name": "nodeauth-challenge",
+
     "version": "1.0.0",
-    "description": "Use `Node.js`, `Express` and `Knex` to build an API that provides **Register** and **Login** functionality using `SQLite` to store _User_ information. Make sure the password is not stored as plain text.",
+
+    "description": "Authentication Sprint Challenge",
+
     "main": "index.js",
     "scripts": {
         "server": "nodemon index.js",
@@ -9,16 +12,26 @@
         "test": "cross-env DB_ENV=testing jest --watch"
     },
     "repository": {
+
         "type": "git",
-        "url": "git+https://github.com/oofiksoo/node-auth1-project"
+
+        "url": "git+https://github.com/LambdaSchool/Sprint-Challenge-Authentication.git"
+
     },
+
     "keywords": [],
-    "author": "",
+
+    "author": "Lambda School",
+
     "license": "ISC",
+
     "bugs": {
-        "url": "https://github.com/oofiksoo/node-auth1-project"
+
+        "url": "https://github.com/LambdaSchool/Sprint-Challenge-Authentication/issues"
+
     },
-    "homepage": "https://github.com/oofiksoo/node-auth1-project.git",
+
+    "homepage": "https://github.com/LambdaSchool/Sprint-Challenge-Authentication#readme",
     "dependencies": {
         "axios": "^0.19.2",
         "bcryptjs": "^2.4.3",

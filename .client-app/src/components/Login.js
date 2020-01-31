@@ -65,7 +65,6 @@ const Login = ({ errors, touched, values, userLogin, history }) => {
   };
   return (
     <LoginCont>
-      <h1>Welcome To SoAccellerated!</h1>
       <LoginContainer>
         <Form className="login-form" onSubmit={handleLoginSubmit}>
           <label className="login-label">

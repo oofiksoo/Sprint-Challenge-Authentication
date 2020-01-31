@@ -29,7 +29,7 @@ export const userLogin = (loginData, history) => dispatch => {
 
 export const userLogout = () => dispatch => {
   localStorage.removeItem("Authorization");
-  Axios.get("http://localhost:5000/api/auth/logout")
+  Axios.get("http://localhost:3300/api/auth/logout")
     .then(
       res =>
         dispatch({ type: types.LOGOUT }) &

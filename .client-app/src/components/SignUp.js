@@ -23,15 +23,9 @@ const SignUp = ({ errors, touched, values, userSignup, history }) => {
 
     userSignup(values, history);
   };
-  const handleclose = () => {
-    history.goBack();
-  };
 
   return (
     <RegisterContainer>
-      <div className="xclose" onClick={handleclose}>
-        X
-      </div>
       <Form className="signup-form" onSubmit={handleSignupSubmit}>
         <label className="signup-label"> Username </label>
         <Field
@@ -41,7 +35,7 @@ const SignUp = ({ errors, touched, values, userSignup, history }) => {
           placeholder="username"
         />
         {touched.username && errors.username && (
-          <span className="error"> {errors.first_name} </span>
+          <span className="error"> {errors.username} </span>
         )}
         <label className="signup-label"> Password: </label>
         <Field
