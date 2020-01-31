@@ -39,7 +39,7 @@ export const combinedReducer = (state = initialState, action) => {
         case types.GET_JOKES:
             return {
                 ...state,
-                usertransaction: false,
+                joketransaction: false,
                 jokes: [],
                 error: ""
             };
@@ -51,7 +51,7 @@ export const combinedReducer = (state = initialState, action) => {
 
                 error: "",
 
-                jokess: [...state.jokes, ...action.payload]
+                jokes: [...state.jokes, ...action.payload]
             };
 
         case types.GET_JOKES_FAILED:

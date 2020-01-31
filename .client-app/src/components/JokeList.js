@@ -6,6 +6,7 @@ const JokeListContainer = Styled.div`
 display:flex;
 flex-direction:column;
 padding:1%;
+margin:1% auto;
 width:80%;
 background-color:black;
 color:white;
@@ -18,6 +19,7 @@ const JokeCard = Styled.div`
 display:flex;
 color:white;
 margin:1%;
+padding:1%;
 width:20%;
 justify-content:center;
 border:2px solid white;
@@ -51,6 +53,7 @@ class JokeList extends Component {
     }
     return (
       <JokeListContainer>
+        {console.log(this.props.jokes)}
         <h1> Current Jokes: </h1>
         <JokeCardContainer>
           {this.props.jokes.map(joke => (
