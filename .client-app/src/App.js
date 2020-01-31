@@ -20,7 +20,7 @@ function App(props) {
 const mapStateToProps = state => {
   return {
     username: state.username,
-    jokess: state.jokes,
+    jokes: state.jokes,
     logintransaction: false,
     joketransaction: false,
     token: state.token

@@ -17,7 +17,7 @@ export const combinedReducer = (state = initialState, action) => {
             return {
                 ...state,
                 error: "",
-                token: "",
+                token: [],
                 logintransaction: false
             };
         case types.LOGIN_SUCCESS:

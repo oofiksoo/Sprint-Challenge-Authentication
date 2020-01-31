@@ -8,7 +8,6 @@ import thunk from "redux-thunk";
 import { combinedReducer } from "./reducers/combinedReducer";
 import "./index.css";
 import App from "./App";
-
 const store = createStore(combinedReducer, applyMiddleware(thunk));
 const History = createBrowserHistory();
 
