@@ -7,7 +7,7 @@ export const userSignup = (userData, history) => dispatch => {
         .post("/auth/register", userData)
         .then(res => {
             dispatch({ type: types.REGISTER });
-            history.goback();
+            history.push("/login");
         })
         .catch(err => console.log(err));
 };
@@ -22,7 +22,7 @@ export const userLogin = (loginData, history) => dispatch => {
             });
             localStorage.setItem("Authorization", res.data.token);
             console.log(res.data.token);
-            history.push("/dashboard");
+            history.push("/jokes");
         })
         .catch(err => console.log(err));
 };

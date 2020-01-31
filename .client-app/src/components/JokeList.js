@@ -8,6 +8,7 @@ flex-direction:column;
 padding:1%;
 width:80%;
 background-color:black;
+color:white;
 padding:1%;
 justify-content:center;
 border-radius:20px;
@@ -15,6 +16,7 @@ border-radius:20px;
 `;
 const JokeCard = Styled.div`
 display:flex;
+color:white;
 margin:1%;
 width:20%;
 justify-content:center;
@@ -33,7 +35,7 @@ class JokeList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      usertransaction: false
+      joketransaction: false
     };
   }
   componentDidMount() {
